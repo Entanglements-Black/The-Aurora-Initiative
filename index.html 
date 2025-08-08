@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soul Engine - The Aurora Initiative</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(18, 18, 18, 0) 0%, #121212 100%);
+        }
+        .glow-effect {
+            box-shadow: 0 0 15px 5px rgba(168, 85, 247, 0.4), 0 0 30px 10px rgba(168, 85, 247, 0.3);
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        .spinner {
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            border-left-color: #A855F7;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+        .page-section { display: none; }
+        .givebutter-widget-container {
+            min-height: 600px;
+        }
+    </style>
+</head>
+<body class="bg-[#121212] text-white antialiased">
+
+    <!-- Main Landing Page View -->
+    <div id="main-page" class="page-section">
+        <header class="fixed top-0 left-0 w-full z-20 bg-black/50 backdrop-blur-sm">
+            <div class="container mx-auto flex justify-between items-center p-4">
+                <h1 class="text-2xl font-bold tracking-tighter">Soul Engine</h1>
+                <a href="#donate" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg transition-colors">
+                    Create for Peace
+                </a>
+            </div>
+        </header>
+
+        <main class="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+            <div class="absolute inset-0 z-0">
+                <img src="https://placehold.co/1920x1080/000000/FFFFFF?text=Hopeful+AI+Art" 
+                     onerror="this.onerror=null;this.src='https://placehold.co/1920x1080/000000/FFFFFF?text=Error+Loading+Image';"
+                     alt="Abstract AI generated art representing hope" class="w-full h-full object-cover opacity-40">
+                <div class="absolute inset-0 hero-gradient"></div>
+            </div>
+            <div class="relative z-10 text-center p-6 max-w-3xl">
+                <h2 class="text-5xl md:text-7xl font-black tracking-tighter mb-4">Your Words Become Art.</h2>
+                <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                    Join The Aurora Initiative. Let's flood the world with art for peace.
+                </p>
+                <a href="#donate" class="bg-purple-600 hover:bg-purple-500 text-white font-bold text-xl py-4 px-10 rounded-lg transition-all duration-300 ease-in-out transform hover:scale-105 glow-effect">
+                    Create & Donate
+                </a>
+            </div>
+        </main>
+        
+        <section class="py-20 bg-[#181818]">
+            <div class="container mx-auto px-6 text-center">
+                <h3 class="text-4xl font-bold mb-12">How It Works in Seconds</h3>
+                <div class="grid md:grid-cols-3 gap-12">
+                     <div class="bg-[#222] p-8 rounded-2xl border border-gray-700">
+                        <div class="text-5xl font-black text-purple-400 mb-4">1</div>
+                        <h4 class="text-2xl font-bold mb-2">Share Your Vision</h4>
+                        <p class="text-gray-400">Make a contribution and share a prompt—a vision of peace, a dream of unity, a hopeful phrase.</p>
+                    </div>
+                    <div class="bg-[#222] p-8 rounded-2xl border border-gray-700">
+                        <div class="text-5xl font-black text-purple-400 mb-4">2</div>
+                        <h4 class="text-2xl font-bold mb-2">Witness the Magic</h4>
+                        <p class="text-gray-400">Our Soul Engine gets to work, generating your unique piece of digital art in real-time.</p>
+                    </div>
+                    <div class="bg-[#222] p-8 rounded-2xl border border-gray-700">
+                        <div class="text-5xl font-black text-purple-400 mb-4">3</div>
+                        <h4 class="text-2xl font-bold mb-2">Share Your Hope</h4>
+                        <p class="text-gray-400">Your masterpiece is revealed instantly, ready for you to download and share with the world.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <h3 class="text-4xl font-bold text-center mb-12">A Gallery of Hope</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <img src="https://placehold.co/600x600/333/FFF?text=Peace+Art+1" onerror="this.onerror=null;this.src='https://placehold.co/600x600/333/FFF?text=Image';" alt="AI Art Example 1" class="rounded-lg hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x600/444/FFF?text=Peace+Art+2" onerror="this.onerror=null;this.src='https://placehold.co/600x600/444/FFF?text=Image';" alt="AI Art Example 2" class="rounded-lg hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x600/555/FFF?text=Peace+Art+3" onerror="this.onerror=null;this.src='https://placehold.co/600x600/555/FFF?text=Image';" alt="AI Art Example 3" class="rounded-lg hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x600/666/FFF?text=Peace+Art+4" onerror="this.onerror=null;this.src='https://placehold.co/600x600/666/FFF?text=Image';" alt="AI Art Example 4" class="rounded-lg hover:scale-105 transition-transform duration-300">
+                </div>
+            </div>
+        </section>
+
+        <section id="donate" class="py-20 bg-[#181818]">
+            <div class="container mx-auto px-6 text-center max-w-2xl">
+                <h3 class="text-4xl font-bold mb-4">Add Your Voice</h3>
+                <p class="text-gray-400 mb-8">Your contribution powers a shared message of peace on Earth. When you create and share your art, you add your voice to a global call for hope and unity through shared creativity.</p>
+                <div id="givebutter-embed" class="bg-[#222] p-2 sm:p-4 rounded-2xl border border-gray-700 givebutter-widget-container">
+                </div>
+            </div>
+        </section>
+
+        <footer class="py-12 text-center">
+            <p class="text-gray-500">&copy; 2025 Soul Engine. A project by The Aurora Initiative.</p>
+        </footer>
+    </div>
+
+    <div id="creating-page" class="page-section min-h-screen flex flex-col items-center justify-center text-center p-6">
+        <h2 class="text-4xl font-bold mb-4">The Soul Engine is Warming Up...</h2>
+        <p class="text-xl text-gray-400 mb-8">Your vision of peace is being translated into art. Please wait a moment.</p>
+        <div class="spinner"></div>
+    </div>
+
+    <div id="result-page" class="page-section min-h-screen flex flex-col items-center justify-center text-center p-6">
+        <h2 class="text-5xl font-black tracking-tighter mb-4">Behold, Your Vision!</h2>
+        <p class="text-xl text-gray-400 mb-8 max-w-2xl">Generated from your prompt: "<span id="result-prompt" class="text-purple-400 italic"></span>"</p>
+        <div class="max-w-2xl w-full mb-8 rounded-lg overflow-hidden shadow-2xl">
+            <img id="result-image" src="" alt="Your generated AI art" class="w-full">
+        </div>
+        <div class="flex space-x-4">
+            <a id="download-btn" href="#" download="aurora-initiative-art.png" class="bg-purple-600 hover:bg-purple-500 text-white font-bold py-3 px-6 rounded-lg transition-colors">Download Art</a>
+            <a href="/" id="create-another-btn" class="bg-gray-600 hover:bg-gray-500 text-white font-bold py-3 px-6 rounded-lg transition-colors">Create Another</a>
+        </div>
+    </div>
+
+    <script src="https://givebutter.com/js/widget.js"></script>
+    <script>
+        const GIVEBUTTER_CAMPAIGN_URL = "https://givebutter.com/cOhWJ2";
+        const mainPage = document.getElementById('main-page');
+        const creatingPage = document.getElementById('creating-page');
+        const resultPage = document.getElementById('result-page');
+
+        function route() {
+            const hash = window.location.hash;
+            mainPage.style.display = 'none';
+            creatingPage.style.display = 'none';
+            resultPage.style.display = 'none';
+
+            if (hash.startsWith('#creating')) {
+                creatingPage.style.display = 'flex';
+                const params = new URLSearchParams(hash.substring(hash.indexOf('?') + 1));
+                const prompt = params.get('prompt') || "A beautiful vision of peace";
+                pollForResult(prompt);
+            } else if (hash.startsWith('#result')) {
+                resultPage.style.display = 'flex';
+                const params = new URLSearchParams(hash.substring(hash.indexOf('?') + 1));
+                document.getElementById('result-prompt').textContent = params.get('prompt') || 'Your amazing idea';
+                document.getElementById('result-image').src = params.get('imageUrl');
+                document.getElementById('download-btn').href = params.get('imageUrl');
+            } else {
+                mainPage.style.display = 'block';
+            }
+        }
+
+        async function pollForResult(prompt) {
+            console.log("Sending prompt to backend:", prompt);
+            
+            // --- THIS IS NOW THE LIVE, PRODUCTION URL ---
+            const backendUrl = "https://soul-engine-backend.onrender.com/api/create-art";
+
+            try {
+                const response = await fetch(backendUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ prompt: prompt })
+                });
+
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(errorData.error || 'Failed to create art');
+                }
+                
+                const result = await response.json();
+
+                const params = new URLSearchParams({
+                    prompt: prompt,
+                    imageUrl: result.imageUrl
+                }).toString();
+                window.location.hash = `#result?${params}`;
+
+            } catch (error) {
+                console.error("Error creating art:", error);
+                const resultPageContent = document.getElementById('result-page');
+                resultPageContent.innerHTML = `<div class="text-red-500 text-center p-8">
+                    <h2 class="text-3xl font-bold mb-4">An Error Occurred</h2>
+                    <p>Sorry, we couldn't create your art at this time. Please try again later.</p>
+                    <a href="/" class="mt-4 inline-block bg-gray-600 text-white font-bold py-2 px-4 rounded-lg">Go Back</a>
+                </div>`;
+                window.location.hash = '#result';
+            }
+        }
+        
+        function loadGivebutterWidget() {
+            if (typeof Givebutter === 'undefined') {
+                setTimeout(loadGivebutterWidget, 100);
+                return;
+            }
+
+            Givebutter.render({
+                url: GIVEBUTTER_CAMPAIGN_URL,
+                container: '#givebutter-embed',
+                onSuccess: (e) => {
+                    const transaction = e.detail.transaction;
+                    const promptField = transaction.form_fields.find(field => field.label.includes("Vision of Peace"));
+                    const userPrompt = promptField ? promptField.value : "A beautiful vision of peace";
+                    window.location.hash = `#creating?prompt=${encodeURIComponent(userPrompt)}`;
+                },
+            });
+        }
+
+        document.getElementById('create-another-btn').addEventListener('click', (e) => {
+            e.preventDefault();
+            window.location.href = window.location.pathname;
+        });
+
+        window.addEventListener('hashchange', route);
+        window.addEventListener('load', () => {
+            route();
+            loadGivebutterWidget();
+        });
+    </script>
+</body>
+</html>
